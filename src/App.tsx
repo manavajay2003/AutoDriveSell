@@ -12,6 +12,7 @@ import LoginFailurePage from "./pages/LoginFailure/LoginFailure";
 import Catalogue from "./pages/Catalogue/Catalogue";
 import Basket from "./pages/Basket/Basket";
 import ProductItemPage from './pages/Product-Item-Page/Product-Item.tsx';
+import AdminPage from "./pages/Admin/AdminPage";
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
             <Route path="login-failure" element={<LoginFailurePage />} />
             <Route path="products" element={<Catalogue />} />
             <Route path="products/:itemId" element={<ProductItemPage />} />
+            <Route path="admin" element={<AdminPage />} />
             <Route path="basket" element={<Basket />} />
           </Route>
         </Routes>
